@@ -1,0 +1,13 @@
+{
+  "name": "std/wol",
+  "version": "0.1.0",
+  "license": "ISC",
+  "build": {
+    "native": {
+      "sourceFiles": ["./native_wol.cpp"],
+      "extraCopyPaths": ["./native_wol.hpp"],
+      "windows": { "linkLibraries": ["ws2_32"] }
+    }
+  },
+  "dependencies": {}
+}
